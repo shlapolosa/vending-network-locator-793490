@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Smart Vending Machine Network - Compliance Model" id="svmn-compliance-model" version="5.0.0">
+  <folder name="Motivation" id="motivation-folder" type="motivation">
+    
+    <!-- Regulatory Constraints -->
+    <element xsi:type="archimate:Constraint" name="GDPR Article 6 - Lawful Processing" id="constraint-gdpr-1">
+      <documentation>Legal basis required for processing personal location and usage data. Consent must be freely given, specific, informed and unambiguous.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="GDPR Article 17 - Right to Erasure" id="constraint-gdpr-2">
+      <documentation>Users have the right to request deletion of their personal data including location history and usage patterns.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="GDPR Article 25 - Data Protection by Design" id="constraint-gdpr-3">
+      <documentation>Privacy considerations must be integrated into system design from inception. Default settings must be privacy-protective.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="GDPR Article 32 - Security of Processing" id="constraint-gdpr-4">
+      <documentation>Implement appropriate technical and organizational measures to ensure data security including encryption, pseudonymization, and access controls.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="CCPA Section 1798.100 - Consumer Rights" id="constraint-ccpa-1">
+      <documentation>California consumers have right to know what personal information is collected, disclosed or sold, and right to deletion.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="CCPA Section 1798.150 - Data Breach Liability" id="constraint-ccpa-2">
+      <documentation>Private right of action for data breaches. Enhanced security measures required to protect consumer personal information.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="PCI-DSS Requirement 3 - Protect Stored Cardholder Data" id="constraint-pci-1">
+      <documentation>If payment data flows through system, cardholder data must be protected with encryption and tokenization. Minimize data retention.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="PCI-DSS Requirement 6 - Secure Development" id="constraint-pci-2">
+      <documentation>Applications must be developed following secure coding practices. Regular security testing and vulnerability management required.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="PCI-DSS Requirement 12 - Security Policy" id="constraint-pci-3">
+      <documentation>Maintain information security policy that addresses all PCI-DSS requirements. Annual risk assessment mandatory.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="ePrivacy Directive Article 5(3) - Cookie Consent" id="constraint-eprivacy-1">
+      <documentation>Prior informed consent required before storing or accessing information on user devices including location data and tracking cookies.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="FTC Act Section 5 - Unfair or Deceptive Practices" id="constraint-ftc-1">
+      <documentation>Privacy policies must be clear, conspicuous, and honored. Material changes require user notification.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="ADA Title III - Digital Accessibility" id="constraint-ada-1">
+      <documentation>Mobile application must be accessible to individuals with disabilities following WCAG 2.1 Level AA standards.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="SOX Section 404 - Internal Controls" id="constraint-sox-1">
+      <documentation>If publicly traded, implement internal controls over financial reporting including audit trails for transactions and inventory valuation.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="State Data Breach Notification Laws" id="constraint-breach-1">
+      <documentation>All 50 US states require notification of data breaches. Timelines vary (24-90 days). EU requires 72-hour notification under GDPR.</documentation>
+    </element>
+    
+    <!-- Industry Standards -->
+    <element xsi:type="archimate:Constraint" name="ISO 27001 - Information Security Management" id="constraint-iso27001">
+      <documentation>Implement systematic approach to managing sensitive information including risk assessment, security controls, and continuous improvement.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="ISO 27017 - Cloud Security Controls" id="constraint-iso27017">
+      <documentation>Cloud-specific security controls for shared responsibility, data segregation, and virtual environment security.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="ISO 27018 - Cloud Privacy Protection" id="constraint-iso27018">
+      <documentation>Protection of personally identifiable information (PII) in public cloud computing environments.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="NIST Cybersecurity Framework" id="constraint-nist-csf">
+      <documentation>Identify, Protect, Detect, Respond, Recover framework for managing cybersecurity risks including IoT device security.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="OWASP Top 10 - Application Security" id="constraint-owasp">
+      <documentation>Address critical web application security risks including injection, broken authentication, sensitive data exposure, and API security.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="OWASP Mobile Top 10" id="constraint-owasp-mobile">
+      <documentation>Mobile-specific security risks: insecure data storage, weak cryptography, insecure communication, improper platform usage.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="OWASP IoT Top 10" id="constraint-owasp-iot">
+      <documentation>IoT security risks: weak passwords, insecure network services, insecure ecosystem interfaces, lack of secure update mechanism.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Constraint" name="REST API Security Best Practices" id="constraint-api-security">
+      <documentation>OAuth 2.0 / OpenID Connect for authentication, API rate limiting, input validation, HTTPS enforcement, API versioning.</documentation>
+    </element>
+    
+    <!-- Architecture Principles -->
+    <element xsi:type="archimate:Principle" name="Privacy by Design" id="principle-privacy">
+      <documentation>Privacy must be embedded into system design, not added as afterthought. Default to most privacy-protective settings.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Data Minimization" id="principle-data-min">
+      <documentation>Collect only personal data that is necessary for specified purposes. Limit retention periods to minimum required.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Security by Default" id="principle-security">
+      <documentation>Security controls must be enabled by default. All communications encrypted. Principle of least privilege enforced.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Transparency and Accountability" id="principle-transparency">
+      <documentation>Users must understand what data is collected and how it's used. Maintain audit logs for compliance verification.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Defense in Depth" id="principle-defense">
+      <documentation>Multiple layers of security controls. Assume breach mentality. Network segmentation and zero trust architecture.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Secure Development Lifecycle" id="principle-sdlc">
+      <documentation>Security integrated throughout development process: threat modeling, code review, security testing, vulnerability management.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Incident Response Readiness" id="principle-incident">
+      <documentation>Documented incident response plan. Regular drills. Breach notification procedures. Forensics capability.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Principle" name="Vendor Risk Management" id="principle-vendor">
+      <documentation>Third-party cloud providers and IoT hardware vendors must meet security standards. Regular assessments required.</documentation>
+    </element>
+    
+    <!-- Requirements -->
+    <element xsi:type="archimate:Requirement" name="User Consent Management" id="req-consent">
+      <documentation>Implement granular consent mechanism for location tracking, usage analytics, and marketing. Allow withdrawal at any time.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Data Subject Rights Portal" id="req-dsr">
+      <documentation>Self-service portal for users to access, export, correct, or delete their personal data (GDPR Articles 15-20).</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Location Data Protection" id="req-location">
+      <documentation>Encrypt location data in transit and at rest. Implement geofencing and precision reduction. Anonymous aggregation for analytics.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Payment Data Isolation" id="req-payment">
+      <documentation>Integrate with PCI-compliant payment processors. No storage of card data on vending machines or application servers. Tokenization required.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="API Authentication and Authorization" id="req-api-auth">
+      <documentation>OAuth 2.0 with JWT tokens. API keys for machine-to-server. Role-based access control (RBAC). Rate limiting and DDoS protection.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Encryption Standards" id="req-encryption">
+      <documentation>TLS 1.3 for data in transit. AES-256 for data at rest. Key management using cloud KMS. Certificate pinning for mobile apps.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Audit Logging" id="req-audit">
+      <documentation>Comprehensive audit logs for access to personal data, configuration changes, inventory transactions. Tamper-proof log storage. 1-year retention minimum.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="IoT Device Security" id="req-iot-security">
+      <documentation>Secure boot, device authentication, encrypted communication, OTA update capability, network isolation, disable unnecessary services.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Data Breach Response Plan" id="req-breach-plan">
+      <documentation>Documented procedures for breach detection, containment, investigation, notification. 72-hour notification timeline for GDPR. State law compliance.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Penetration Testing" id="req-pentest">
+      <documentation>Annual penetration testing by qualified third party. Quarterly vulnerability scans. Remediation tracking with SLA.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Privacy Impact Assessment" id="req-pia">
+      <documentation>Conduct Data Protection Impact Assessment (DPIA) per GDPR Article 35 for location tracking and profiling activities.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Accessibility Compliance" id="req-accessibility">
+      <documentation>Mobile app must meet WCAG 2.1 Level AA: keyboard navigation, screen reader support, color contrast, text resizing, alternative text.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Data Retention Policy" id="req-retention">
+      <documentation>Define retention periods per data type. Automated deletion. Location data max 30 days. Anonymous analytics data 2 years. Transaction logs per SOX/tax requirements.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Business Continuity and Disaster Recovery" id="req-bcdr">
+      <documentation>RTO 4 hours, RPO 1 hour. Geographic redundancy. Regular backup testing. Failover procedures. Degraded mode operation capability.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Secure Software Supply Chain" id="req-supply-chain">
+      <documentation>Dependency scanning for vulnerabilities. Software Bill of Materials (SBOM). Container image scanning. Code signing for deployments.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Privacy Policy and Terms of Service" id="req-privacy-policy">
+      <documentation>Clear, conspicuous privacy policy in plain language. Update notification mechanism. Terms of service covering data usage, liability, dispute resolution.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Security Awareness Training" id="req-training">
+      <documentation>Annual security training for all personnel. Role-specific training for developers (secure coding), operators (incident response), admin (access management).</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Cloud Security Baseline" id="req-cloud-security">
+      <documentation>Cloud Security Posture Management (CSPM). Infrastructure as Code security scanning. Secrets management. Network segmentation. Security monitoring and SIEM.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="Age Verification and Child Privacy" id="req-coppa">
+      <documentation>If target users include minors, comply with COPPA (US) and GDPR child consent provisions. Parental consent mechanism for users under 13/16.</documentation>
+    </element>
+    
+    <element xsi:type="archimate:Requirement" name="International Data Transfer Safeguards" id="req-data-transfer">
+      <documentation>Standard Contractual Clauses (SCCs) for EU data transfers. Privacy Shield alternative mechanisms. Data localization where required by regulation.</documentation>
+    </element>
+    
+  </folder>
+  
+  <folder name="Relations" id="relations-folder" type="relations">
+    
+    <!-- GDPR influences requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-1" source="constraint-gdpr-1" target="req-consent" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-2" source="constraint-gdpr-2" target="req-dsr" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-3" source="constraint-gdpr-3" target="principle-privacy" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-4" source="constraint-gdpr-4" target="req-encryption" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-5" source="constraint-gdpr-3" target="req-location" name="mandates"/>
+    
+    <!-- CCPA influences requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-6" source="constraint-ccpa-1" target="req-dsr" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-7" source="constraint-ccpa-2" target="req-breach-plan" name="mandates"/>
+    
+    <!-- PCI-DSS influences requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-8" source="constraint-pci-1" target="req-payment" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-9" source="constraint-pci-2" target="principle-sdlc" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-10" source="constraint-pci-3" target="req-audit" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-11" source="constraint-pci-2" target="req-pentest" name="mandates"/>
+    
+    <!-- Other regulations -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-12" source="constraint-eprivacy-1" target="req-consent" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-13" source="constraint-ftc-1" target="req-privacy-policy" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-14" source="constraint-ada-1" target="req-accessibility" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-15" source="constraint-sox-1" target="req-audit" name="mandates"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-16" source="constraint-breach-1" target="req-breach-plan" name="mandates"/>
+    
+    <!-- ISO standards influence principles and requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-17" source="constraint-iso27001" target="principle-security" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-18" source="constraint-iso27001" target="req-pia" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-19" source="constraint-iso27017" target="req-cloud-security" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-20" source="constraint-iso27018" target="req-location" name="guides"/>
+    
+    <!-- NIST and OWASP influence principles and requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-21" source="constraint-nist-csf" target="principle-defense" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-22" source="constraint-nist-csf" target="principle-incident" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-23" source="constraint-owasp" target="req-api-auth" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-24" source="constraint-owasp-mobile" target="req-encryption" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-25" source="constraint-owasp-iot" target="req-iot-security" name="guides"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-26" source="constraint-api-security" target="req-api-auth" name="guides"/>
+    
+    <!-- Principles influence requirements -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-27" source="principle-privacy" target="req-consent" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-28" source="principle-privacy" target="req-location" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-29" source="principle-data-min" target="req-retention" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-30" source="principle-security" target="req-encryption" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-31" source="principle-security" target="req-iot-security" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-32" source="principle-transparency" target="req-audit" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-33" source="principle-transparency" target="req-privacy-policy" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-34" source="principle-defense" target="req-cloud-security" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-35" source="principle-sdlc" target="req-supply-chain" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-36" source="principle-sdlc" target="req-pentest" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-37" source="principle-incident" target="req-breach-plan" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-38" source="principle-incident" target="req-bcdr" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-39" source="principle-vendor" target="req-cloud-security" name="realizes"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-40" source="principle-vendor" target="req-supply-chain" name="realizes"/>
+    
+    <!-- Cross-requirement dependencies -->
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-41" source="req-encryption" target="req-location" name="supports"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-42" source="req-api-auth" target="req-audit" name="supports"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-43" source="req-training" target="req-breach-plan" name="supports"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="rel-44" source="req-iot-security" target="req-breach-plan" name="supports"/>
+    
+  </folder>
+  
+  <folder name="Views" id="views-folder" type="diagrams"/>
+  
+  <purpose>Comprehensive compliance and regulatory framework for Smart Vending Machine Network covering data privacy (GDPR, CCPA), payment security (PCI-DSS), industry standards (ISO 27001/17/18, OWASP, NIST), accessibility (ADA), and IoT security requirements</purpose>
+  
+</archimate:model>
