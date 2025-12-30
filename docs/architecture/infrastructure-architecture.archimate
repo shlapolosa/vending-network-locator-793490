@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="Infrastructure Architecture Model" id="infrastructure-architecture-model-model" version="5.0.0">
+  <folder name="Default" id="default-folder" type="other">
+    <element xsi:type="archimate:Grouping" name="No content generated" id="placeholder-1"/>
+  </folder>
+  <folder name="Relations" id="relations-folder" type="relations"/>
+  <folder name="Views" id="views-folder" type="diagrams"/>
+  <purpose>No infrastructure architecture model generated.</purpose>
+</archimate:model>
