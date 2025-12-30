@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="vCluster Business Model Canvas" id="business-canvas-model" version="5.0.0">
+  <folder name="Strategy" id="strategy-folder" type="strategy">
+    <element xsi:type="archimate:Value" name="Automated Enterprise Architecture Generation" id="value-1">
+      <documentation>AI-powered transformation of business requirements into comprehensive architectural models, reducing time from weeks to minutes while ensuring compliance and best practices</documentation>
+    </element>
+    <element xsi:type="archimate:Value" name="Compliance-First Design" id="value-2">
+      <documentation>Built-in regulatory compliance (GDPR, HIPAA, SOC2, ISO27001) integrated into architecture generation, reducing compliance risk and audit preparation time</documentation>
+    </element>
+    <element xsi:type="archimate:Value" name="Multi-Stakeholder Collaboration" id="value-3">
+      <documentation>Unified platform enabling business owners, architects, and technical teams to collaborate using standardized ArchiMate notation</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="Claude AI Engine" id="resource-1">
+      <documentation>Anthropic Claude 3.5 Sonnet providing natural language processing and architecture generation capabilities</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="n8n Workflow Platform" id="resource-2">
+      <documentation>Automation platform orchestrating the end-to-end architecture generation pipeline</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="ArchiMate Knowledge Base" id="resource-3">
+      <documentation>Comprehensive repository of ArchiMate 3.2 patterns, compliance frameworks, and best practices</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="Slack Integration Layer" id="resource-4">
+      <documentation>Real-time communication and collaboration interface for stakeholder engagement</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Requirements Analysis" id="cap-1">
+      <documentation>Ability to extract, analyze, and structure business requirements from natural language input</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Compliance Mapping" id="cap-2">
+      <documentation>Automated identification and application of regulatory requirements to architecture models</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Architecture Generation" id="cap-3">
+      <documentation>Creation of multi-layer enterprise architecture models in ArchiMate format</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Workflow Orchestration" id="cap-4">
+      <documentation>Management of complex multi-phase architecture development processes</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="AI-Driven Automation Strategy" id="coa-1">
+      <documentation>Leverage AI to automate 80% of routine architecture documentation tasks, enabling architects to focus on strategic design decisions</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Compliance-as-Code Strategy" id="coa-2">
+      <documentation>Embed compliance requirements directly into architecture generation templates and validation rules</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Platform Ecosystem Strategy" id="coa-3">
+      <documentation>Build extensible platform supporting multiple architecture tools (Archi, Sparx EA, BiZZdesign) and integration points</documentation>
+    </element>
+  </folder>
+  <folder name="Business" id="business-folder" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Enterprise Architects" id="actor-1">
+      <documentation>Primary users requiring rapid architecture model generation and documentation</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Business Owners" id="actor-2">
+      <documentation>Stakeholders needing to translate business ideas into architectural blueprints</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Compliance Officers" id="actor-3">
+      <documentation>Users requiring compliance verification and regulatory documentation</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Technology Teams" id="actor-4">
+      <documentation>Implementation teams consuming architecture models for development</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Architecture Generation Service" id="service-1">
+      <documentation>End-to-end service transforming requirements into deployable architecture models</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Compliance Validation Service" id="service-2">
+      <documentation>Automated compliance checking and regulatory gap analysis</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Collaboration Platform Service" id="service-3">
+      <documentation>Real-time stakeholder engagement and model review capabilities</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Enterprise Edition" id="product-1">
+      <documentation>Full-featured platform for large enterprises with advanced compliance and integration needs</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Professional Edition" id="product-2">
+      <documentation>Mid-market solution for growing organizations requiring standardized architecture practices</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Starter Edition" id="product-3">
+      <documentation>Entry-level offering for small teams and individual architects</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Enterprise License Agreement" id="contract-1">
+      <documentation>Annual subscription with unlimited users, priority support, and custom integrations</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Professional License Agreement" id="contract-2">
+      <documentation>Annual subscription for up to 50 users with standard integrations</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Starter License Agreement" id="contract-3">
+      <documentation>Monthly subscription for up to 5 users with core features</documentation>
+    </element>
+  </folder>
+  <folder name="Application" id="application-folder" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Requirements Analyzer" id="app-1">
+      <documentation>AI-powered component extracting structured requirements from natural language</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Compliance Engine" id="app-2">
+      <documentation>Rule-based system mapping regulations to architecture elements</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Architecture Generator" id="app-3">
+      <documentation>Core component creating ArchiMate-compliant XML models</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Workflow Orchestrator" id="app-4">
+      <documentation>n8n-based automation managing multi-phase generation pipeline</documentation>
+    </element>
+  </folder>
+  <folder name="Relations" id="relations-folder" type="relations">
+    <element xsi:type="archimate:RealizationRelationship" id="rel-1" source="resource-1" target="cap-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-2" source="resource-1" target="cap-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-3" source="resource-2" target="cap-4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-4" source="resource-3" target="cap-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-5" source="cap-1" target="value-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-6" source="cap-2" target="value-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-7" source="cap-3" target="value-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-8" source="cap-4" target="value-3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-9" source="service-1" target="actor-1"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-10" source="service-1" target="actor-2"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-11" source="service-2" target="actor-3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-12" source="service-3" target="actor-4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-13" source="app-1" target="service-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-14" source="app-2" target="service-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-15" source="app-3" target="service-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-16" source="app-4" target="service-3"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-17" source="product-1" target="service-1"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-18" source="product-1" target="service-2"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-19" source="product-1" target="service-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-20" source="contract-1" target="product-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-21" source="contract-2" target="product-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-22" source="contract-3" target="product-3"/>
+  </folder>
+  <folder name="Views" id="views-folder" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Business Model Canvas Overview" id="view-1">
+      <documentation>Comprehensive view of vCluster business model showing value propositions, customer segments, channels, and revenue streams</documentation>
+    </element>
+  </folder>
+  <purpose>Business Model Canvas for vCluster - AI-powered enterprise architecture automation platform. This model defines the value proposition, key resources and capabilities, customer segments, and strategic approach for delivering automated ArchiMate model generation with built-in compliance and collaboration features.</purpose>
+  <property key="Revenue_Model" value="Subscription-based SaaS with tiered pricing (Starter/Professional/Enterprise)"/>
+  <property key="Cost_Structure" value="AI API costs (Claude), Infrastructure (n8n, hosting), Development, Sales &amp; Marketing"/>
+  <property key="Key_Partnerships" value="Anthropic (AI), ArchiMate Forum, Enterprise Architecture tool vendors, Compliance framework providers"/>
+  <property key="Customer_Relationships" value="Self-service platform, Community support, Dedicated account management (Enterprise), Professional services"/>
+  <property key="Channels" value="Direct web platform, Slack integration, API access, Partner ecosystem"/>
+</archimate:model>
