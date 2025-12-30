@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="vCluster Business Architecture" id="vcluster-business-arch" version="5.0.0">
+  <folder name="Motivation" id="motivation-folder" type="motivation">
+    <element xsi:type="archimate:Stakeholder" name="Enterprise Architects" id="stakeholder-1">
+      <documentation>Primary users requiring rapid, compliant architecture model generation</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Business Executives" id="stakeholder-2">
+      <documentation>Decision-makers needing to translate strategic initiatives into architectural blueprints</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Compliance Officers" id="stakeholder-3">
+      <documentation>Regulatory stakeholders ensuring adherence to GDPR, HIPAA, SOC2, ISO27001</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Development Teams" id="stakeholder-4">
+      <documentation>Technical implementers consuming architecture models for system delivery</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Digital Transformation Acceleration" id="driver-1">
+      <documentation>Pressure to rapidly deliver enterprise architectures supporting digital initiatives</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Regulatory Complexity" id="driver-2">
+      <documentation>Increasing compliance requirements across multiple jurisdictions and frameworks</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Architecture Skills Gap" id="driver-3">
+      <documentation>Shortage of experienced enterprise architects capable of creating comprehensive models</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Cost Optimization" id="driver-4">
+      <documentation>Need to reduce time and cost associated with manual architecture documentation</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Manual Architecture Creation Takes 3-6 Weeks" id="assessment-1">
+      <documentation>Current state analysis showing lengthy timeframes for traditional EA model development</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Compliance Gaps in 60% of Models" id="assessment-2">
+      <documentation>Analysis showing majority of manually created models miss critical compliance requirements</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Limited Stakeholder Collaboration" id="assessment-3">
+      <documentation>Traditional tools create barriers between business and technical stakeholders</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Reduce Architecture Delivery Time by 90%" id="goal-1">
+      <documentation>Transform architecture creation from weeks to hours through AI automation</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Achieve 100% Compliance Coverage" id="goal-2">
+      <documentation>Ensure every generated architecture includes required regulatory controls</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Enable Cross-Functional Collaboration" id="goal-3">
+      <documentation>Create unified platform where business and technical teams co-create architectures</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Establish Market Leadership in AI-Powered EA" id="goal-4">
+      <documentation>Become the recognized leader in AI-driven enterprise architecture automation</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Architecture Generated in Minutes" id="outcome-1">
+      <documentation>Reduction in time-to-architecture from 3-6 weeks to 15-30 minutes</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Compliant-by-Design Models" id="outcome-2">
+      <documentation>Every architecture includes mapped compliance requirements and controls</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Unified Stakeholder Platform" id="outcome-3">
+      <documentation>Business owners, architects, and developers collaborate using standard notation</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="AI Augmentation Not Replacement" id="principle-1">
+      <documentation>AI automates routine tasks while architects focus on strategic design decisions</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Standards-Based Architecture" id="principle-2">
+      <documentation>All generated models conform to ArchiMate 3.2 and TOGAF standards</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Compliance-First Design" id="principle-3">
+      <documentation>Regulatory requirements integrated into architecture generation process</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Generate Multi-Layer ArchiMate Models" id="req-1">
+      <documentation>System must create Motivation, Strategy, Business, Application, Technology, and Implementation layers</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Support Major Compliance Frameworks" id="req-2">
+      <documentation>Platform must embed GDPR, HIPAA, SOC2, ISO27001, and PCI-DSS requirements</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Enable Real-Time Collaboration" id="req-3">
+      <documentation>Support concurrent editing and review by multiple stakeholders via Slack integration</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Export to Standard EA Tools" id="req-4">
+      <documentation>Generate XML compatible with Archi, Sparx Enterprise Architect, and BiZZdesign</documentation>
+    </element>
+  </folder>
+  <folder name="Strategy" id="strategy-folder" type="strategy">
+    <element xsi:type="archimate:Resource" name="Claude AI Engine" id="resource-1">
+      <documentation>Anthropic Claude 3.5 Sonnet providing NLP and architecture generation capabilities</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="n8n Workflow Automation Platform" id="resource-2">
+      <documentation>Open-source automation platform orchestrating architecture generation pipeline</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="ArchiMate Knowledge Base" id="resource-3">
+      <documentation>Comprehensive repository of patterns, compliance mappings, and best practices</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="Slack Integration Framework" id="resource-4">
+      <documentation>Real-time collaboration and notification infrastructure</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="Enterprise Architecture Team" id="resource-5">
+      <documentation>Expert architects providing model validation and customer guidance</documentation>
+    </element>
+    <element xsi:type="archimate:Resource" name="Cloud Infrastructure" id="resource-6">
+      <documentation>Scalable compute and storage supporting concurrent model generation</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Natural Language Requirements Analysis" id="cap-1">
+      <documentation>Extract and structure business requirements from conversational input</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Compliance Requirements Mapping" id="cap-2">
+      <documentation>Automatically identify and apply regulatory controls to architecture elements</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Multi-Layer Architecture Generation" id="cap-3">
+      <documentation>Create comprehensive EA models spanning all ArchiMate layers</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Workflow Orchestration" id="cap-4">
+      <documentation>Manage complex multi-phase architecture development processes</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Model Validation and Quality Assurance" id="cap-5">
+      <documentation>Verify completeness, consistency, and compliance of generated models</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Stakeholder Collaboration Management" id="cap-6">
+      <documentation>Enable real-time review, feedback, and approval workflows</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="AI-First Automation Strategy" id="coa-1">
+      <documentation>Leverage Claude AI to automate 80% of routine architecture documentation</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Compliance-as-Code Strategy" id="coa-2">
+      <documentation>Embed regulatory requirements into generation templates and validation rules</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Platform Ecosystem Strategy" id="coa-3">
+      <documentation>Build extensible platform supporting integration with major EA tools</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Tiered Product Strategy" id="coa-4">
+      <documentation>Offer Starter, Professional, and Enterprise editions addressing different market segments</documentation>
+    </element>
+    <element xsi:type="archimate:ValueStream" name="Architecture Delivery Value Stream" id="valuestream-1">
+      <documentation>End-to-end process from requirements capture to deployable architecture model</documentation>
+    </element>
+  </folder>
+  <folder name="Business" id="business-folder" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Chief Architect" id="actor-1">
+      <documentation>Senior leader overseeing enterprise architecture practice</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Solution Architect" id="actor-2">
+      <documentation>Practitioner designing specific solution architectures</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Business Analyst" id="actor-3">
+      <documentation>Requirements gatherer translating business needs to architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Compliance Manager" id="actor-4">
+      <documentation>Professional ensuring regulatory adherence in architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Project Manager" id="actor-5">
+      <documentation>Coordinator managing architecture delivery timelines</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Architecture Requester" id="role-1">
+      <documentation>Initiates architecture generation by providing business requirements</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Architecture Reviewer" id="role-2">
+      <documentation>Validates generated models for completeness and accuracy</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Compliance Validator" id="role-3">
+      <documentation>Verifies regulatory requirements coverage in architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Architecture Consumer" id="role-4">
+      <documentation>Uses completed architecture for implementation planning</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Requirement Capture Process" id="process-1">
+      <documentation>Gather and structure business and technical requirements via Slack</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Architecture Generation Process" id="process-2">
+      <documentation>AI-powered creation of multi-layer ArchiMate models</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Compliance Validation Process" id="process-3">
+      <documentation>Automated checking and mapping of regulatory requirements</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Stakeholder Review Process" id="process-4">
+      <documentation>Collaborative review and refinement of generated architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Architecture Delivery Process" id="process-5">
+      <documentation>Export and distribution of finalized models to EA tools</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Requirements Analysis" id="function-1">
+      <documentation>Extract structured requirements from natural language input</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Compliance Mapping" id="function-2">
+      <documentation>Identify and apply relevant regulatory controls</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Model Generation" id="function-3">
+      <documentation>Create ArchiMate XML models across all layers</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Quality Assurance" id="function-4">
+      <documentation>Validate model completeness, consistency, and standards compliance</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Collaboration Management" id="function-5">
+      <documentation>Coordinate stakeholder engagement and feedback collection</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Architecture Generation Service" id="service-1">
+      <documentation>End-to-end service transforming requirements into deployable architecture models</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Compliance Validation Service" id="service-2">
+      <documentation>Automated regulatory gap analysis and control mapping</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Collaboration Platform Service" id="service-3">
+      <documentation>Real-time stakeholder engagement via Slack integration</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Model Export Service" id="service-4">
+      <documentation>Generation of tool-specific formats (Archi, Sparx, BiZZdesign)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Architecture Consulting Service" id="service-5">
+      <documentation>Expert guidance on model refinement and best practices</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Architecture Request Received" id="event-1">
+      <documentation>Trigger initiating architecture generation workflow</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Model Generated" id="event-2">
+      <documentation>Completion of initial architecture model creation</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Compliance Validated" id="event-3">
+      <documentation>Successful verification of regulatory requirements coverage</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Review Approved" id="event-4">
+      <documentation>Stakeholder approval of generated architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Architecture Delivered" id="event-5">
+      <documentation>Final model exported and distributed to stakeholders</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Business Requirements Document" id="object-1">
+      <documentation>Structured capture of functional and non-functional requirements</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ArchiMate Model" id="object-2">
+      <documentation>Generated XML representation of enterprise architecture</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Compliance Report" id="object-3">
+      <documentation>Documentation of regulatory requirements coverage and gaps</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Review Feedback" id="object-4">
+      <documentation>Stakeholder comments and requested modifications</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Architecture Deliverable" id="object-5">
+      <documentation>Final packaged model in requested tool format</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Starter Edition" id="product-1">
+      <documentation>Entry-level offering for small teams (up to 5 users, core features)</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Professional Edition" id="product-2">
+      <documentation>Mid-market solution (up to 50 users, standard integrations)</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="vCluster Enterprise Edition" id="product-3">
+      <documentation>Full-featured platform (unlimited users, custom integrations, priority support)</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Subscription Agreement" id="contract-1">
+      <documentation>Service-level agreements and licensing terms for platform access</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Professional Services Agreement" id="contract-2">
+      <documentation>Custom architecture consulting and implementation support</documentation>
+    </element>
+  </folder>
+  <folder name="Relations" id="relations-folder" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="rel-1" source="driver-1" target="stakeholder-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-2" source="driver-2" target="stakeholder-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-3" source="driver-3" target="stakeholder-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-4" source="driver-4" target="stakeholder-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-5" source="assessment-1" target="driver-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-6" source="assessment-2" target="driver-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-7" source="assessment-3" target="driver-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-8" source="driver-1" target="goal-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-9" source="driver-2" target="goal-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-10" source="driver-3" target="goal-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-11" source="driver-4" target="goal-4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-12" source="goal-1" target="outcome-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-13" source="goal-2" target="outcome-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-14" source="goal-3" target="outcome-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-15" source="principle-1" target="goal-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-16" source="principle-2" target="goal-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-17" source="principle-3" target="goal-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-18" source="req-1" target="principle-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-19" source="req-2" target="principle-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-20" source="req-3" target="goal-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-21" source="req-4" target="principle-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-22" source="resource-1" target="cap-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-23" source="resource-1" target="cap-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-24" source="resource-2" target="cap-4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-25" source="resource-3" target="cap-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-26" source="resource-4" target="cap-6"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-27" source="resource-5" target="cap-5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-28" source="cap-1" target="req-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-29" source="cap-2" target="req-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-30" source="cap-3" target="req-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-31" source="cap-4" target="req-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-32" source="cap-5" target="principle-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-33" source="cap-6" target="req-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-34" source="coa-1" target="goal-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-35" source="coa-2" target="goal-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-36" source="coa-3" target="goal-3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-37" source="coa-4" target="goal-4"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-38" source="actor-1" target="role-1"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-39" source="actor-2" target="role-2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-40" source="actor-3" target="role-1"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-41" source="actor-4" target="role-3"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-42" source="actor-5" target="role-4"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-43" source="event-1" target="process-1"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-44" source="process-1" target="process-2"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-45" source="process-2" target="event-2"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-46" source="event-2" target="process-3"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-47" source="process-3" target="event-3"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-48" source="event-3" target="process-4"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-49" source="process-4" target="event-4"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-50" source="event-4" target="process-5"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="rel-51" source="process-5" target="event-5"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-52" source="process-1" target="function-1"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-53" source="process-2" target="function-3"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-54" source="process-3" target="function-2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-55" source="process-4" target="function-5"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="rel-56" source="process-5" target="function-4"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-57" source="process-1" target="object-1" accessType="3"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-58" source="process-2" target="object-2" accessType="3"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-59" source="process-3" target="object-3" accessType="3"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-60" source="process-4" target="object-4" accessType="1"/>
+    <element xsi:type="archimate:AccessRelationship" id="rel-61" source="process-5" target="object-5" accessType="3"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-62" source="function-1" target="service-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-63" source="function-2" target="service-2"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-64" source="function-3" target="service-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-65" source="function-4" target="service-1"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-66" source="function-5" target="service-3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-67" source="service-1" target="actor-1"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-68" source="service-1" target="actor-2"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-69" source="service-2" target="actor-4"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-70" source="service-3" target="actor-3"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-71" source="service-4" target="actor-2"/>
+    <element xsi:type="archimate:ServingRelationship" id="rel-72" source="service-5" target="actor-1"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-73" source="product-1" target="service-1"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-74" source="product-2" target="service-1"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-75" source="product-2" target="service-2"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-76" source="product-3" target="service-1"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-77" source="product-3" target="service-2"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-78" source="product-3" target="service-3"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-79" source="product-3" target="service-4"/>
+    <element xsi:type="archimate:AggregationRelationship" id="rel-80" source="product-3" target="service-5"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-81" source="contract-1" target="product-1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-82" source="contract-1" target="product-2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-83" source="contract-1" target="product-3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="rel-84" source="contract-2" target="service-5"/>
+    <element xsi:type="archimate:RealizationRelationship" id="rel-85" source="valuestream-1" target="outcome-1"/>
+  </folder>
+  <folder name="Views" id="views-folder" type="diagrams"/>
+  <purpose>Comprehensive Business Architecture for vCluster - AI-powered enterprise architecture automation platform. This model defines the complete motivation layer (stakeholders, drivers, goals, outcomes), strategy layer (resources, capabilities, courses of action), and business layer (actors, roles, processes, functions, services, products) required to deliver automated ArchiMate model generation with built-in compliance and collaboration features.</purpose>
+  <property key="Model_Type" value="Business Architecture"/>
+  <property key="Framework" value="TOGAF 10 / ArchiMate 3.2"/>
+  <property key="Scope" value="vCluster Platform - Full Business Architecture"/>
+  <property key="Status" value="Approved"/>
+  <property key="Version" value="1.0"/>
+</archimate:model>
